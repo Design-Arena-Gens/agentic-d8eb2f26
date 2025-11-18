@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth fonts & selection */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+::selection { background: rgb(67 56 202 / 0.35); color: white; }
+
+/* Dark scrollbars */
+* { scrollbar-width: thin; scrollbar-color: rgb(63 63 70) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgb(63 63 70); border-radius: 9999px; }
+
+/* Reusable card style */
+@layer components {
+  .card { @apply rounded-xl border border-zinc-800 bg-zinc-900/60 shadow-soft; }
+}
